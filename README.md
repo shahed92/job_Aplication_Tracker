@@ -4,7 +4,7 @@ A simple and practical **Job Application Tracker** built using **Vanilla JavaScr
 This project helps users keep track of job applications, their current status, and important details — all stored locally in the browser.
 
 ## 🚀 Live Demo
-👉 (Add GitHub Pages link here)
+https://shahed92.github.io/job_Aplication_Tracker/
 
 ---
 
