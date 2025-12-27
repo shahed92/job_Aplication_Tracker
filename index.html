@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Job Application Tracker</h1>
+
+    <!-- Form -->
+    <form id="jobForm">
+      <input type="text" id="company" placeholder="Company Name" required />
+      <input type="text" id="role" placeholder="Job Role" required />
+      
+      <select id="status">
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interviewed</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+
+      <button id ='btn'type="submit">Add Application</button>
+    </form>
+
+    <!-- Filter -->
+    <div class="filter">
+      <select id="filterStatus">
+        <option value="All">All</option>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+    </div>
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="jobList">
+        <!-- JS will insert rows here -->
+         <tr>
+    <!-- <td>Google</td>
+    <td>Frontend Developer Intern</td>
+    <td>Applied</td>
+    <td>
+      <button class="action-btn edit">Edit</button>
+      <button class="action-btn delete">Delete</button>
+    </td> -->
+  </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
