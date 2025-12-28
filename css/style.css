@@ -97,3 +97,13 @@ tbody tr:nth-child(even) {
   background: #dc3545;
   color: white;
 }
+#sheetjsexport {
+    float: left;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
