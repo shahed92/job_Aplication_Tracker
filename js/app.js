@@ -21,9 +21,10 @@ function svaeData(){
 
 function diplayData(){
  let data = localStorage.getItem("jobs");
-    jobs = data?JSON.parse(data):[]
+    jobs = data?JSON.parse(data):[];
  jobList.innerHTML = '';
-    jobs.forEach((job,index)=>{
+    [...jobs].reverse().forEach((job,index)=>{
+       const realIndex = jobs.length - 1 - index;
       
 
         jobList.insertAdjacentHTML('beforeend',
@@ -33,8 +34,8 @@ function diplayData(){
     <td>${job.role}</td>
     <td>${job.status}</td>
     <td>
-      <button class="action-btn edit" onclick="updateJob(${index})">Edit</button>
-      <button class="action-btn delete" onclick="deleteJob(${index})">Delete</button>
+      <button class="action-btn edit" onclick="updateJob(${realIndex})">Edit</button>
+      <button class="action-btn delete" onclick="deleteJob(${realIndex})">Delete</button>
     </td>
   </tr>
         
